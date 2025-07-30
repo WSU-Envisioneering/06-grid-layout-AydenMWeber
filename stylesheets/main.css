@@ -1,0 +1,149 @@
+/* Your styles go here */
+body
+{
+    color: black;
+    background-color: #fffd77;
+    text-align: center;
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif ;
+}
+main
+{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "hr hr"
+    "fig-img inv"
+    "fig-img evo";
+}
+main #fig-img
+{
+    grid-area: fig-img;
+}
+main #invention
+{
+    grid-area: inv;
+}
+main #evolution
+{
+    grid-area: evo;
+}
+main hr
+{
+    grid-area: hr;
+}
+article h2
+{
+    background-color: #fffd77;
+}
+header
+{
+    background-image: linear-gradient(to top, #feffb3, #fffd77);
+    padding: 1em;
+    border: 3px solid #feffb3;
+}
+footer
+{
+    background-color: white;
+    padding: .5em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:calc(100% - 1.35em);
+    height:5em;
+    border-width: 3px;
+    border-style: solid;
+    border-image-slice: 1;
+}
+footer a
+{
+    text-decoration: none;
+    color: #acaa3a;
+}
+footer #go-top
+{
+    color: #79680a;
+    text-decoration: underline;
+    font-size: 0.75em;
+}
+nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item
+{
+    padding: 0.5em 37% 0.5em 37%;
+    margin-bottom: .05em;
+    border-bottom: 2px solid #f3f2a7;
+    border-right: 2px solid #f3f2a7;
+    border-left: 2px solid #f3f2a7;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+}
+#nav1
+{
+    border-top: 2px solid #f3f2a7;
+}
+.nav-item a
+{
+    color: #42280a;
+    text-decoration: none;
+}
+.nav-item a:hover
+{
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #bebe56;
+}
+figure img
+{
+    max-width:calc(60% - 4px);
+    border: 2px solid white;
+}
+figcaption
+{
+    max-width: calc(100% - (60% - 4px));
+    margin-left: 1em;
+    padding: 1.6em;
+    background-color: white;
+}
+figure
+{
+    background-color: rgb(255, 248, 188);
+    padding: 1em;
+    align-items: center;
+    flex-direction: row;
+    display:flex;
+}
+article figcaption
+{
+    max-width: calc(100% - (60% - 4px));
+    margin-left: 1em;
+    padding: 0.25em;
+    background-color: white;
+}
+article figure
+{
+    background-color: #fffd77;
+    padding: 1em;
+}
+hr
+{
+    margin: .1em 0em .1em 0em;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #fffffa, #fffedd);
+    border-image-slice: 1;
+}
+#fig-bottom
+{
+    margin: 0em 1em 0em 0em;
+}
+#fig-bottom figcaption
+{
+    margin: 0em 1em 0em 0em;
+}
+#fig-bottom img
+{
+    order: 2;
+}
