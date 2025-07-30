@@ -42,6 +42,11 @@
     {
         display: grid;
         flex-flow: row nowrap;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+        "hr hr"
+        "fig-img inv"
+        "fig-img evo";
     }
     main #fig-img
     {

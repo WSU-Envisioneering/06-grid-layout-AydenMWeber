@@ -9,11 +9,13 @@ body
 main
 {
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
+    "fig-img fig-img"
     "hr hr"
-    "fig-img inv"
-    "fig-img evo";
+    "inv inv"
+    "evo evo";
+
 }
 main #fig-img
 {
